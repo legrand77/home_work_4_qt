@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
   connect(ui->pushButton, &QPushButton::clicked, [&](){
       int x=ui->progressBar->value()+1;
       ui->progressBar->setValue(x);
-      if (ui->progressBar->value()==10 && x>10){
+      if (x>10){
           ui->progressBar->setValue(0);
       }
     });
